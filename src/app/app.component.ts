@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ChildComponent } from './child/child.component';
+import { InteractionService } from './interaction.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'material-demo';
+
+public name = 'Harshada';
+public hasError = true;
+public highlightColor = "orange";
+public titleStyles = {
+  color: "blue",
+  fontStyle: "italic"
+}
 }
